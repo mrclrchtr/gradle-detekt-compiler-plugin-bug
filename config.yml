@@ -1,0 +1,21 @@
+build:
+  maxIssues: 1
+  excludeCorrectable: false
+  weights:
+    complexity: 5
+    LongParameterList: 5
+    comments: 5
+
+config:
+  validation: true
+  warningsAsErrors: true
+  excludes: ''
+
+naming:
+  active: true
+  excludes: [ '**/src/**' ]
+  VariableNaming:
+    active: true
+    variablePattern: '[a-z][A-Za-z0-9]*'
+    privateVariablePattern: '(_)?[a-z][A-Za-z0-9]*'
+    excludeClassPattern: '$^'
